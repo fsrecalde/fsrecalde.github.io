@@ -1,0 +1,1 @@
+Add your resume as public/Fleurine_Recalde_Resume.pdf and replace public/profile-photo-placeholder.svg with your own photo (or update the image path). Replace the RBMS SVG placeholders with anonymized screenshots.
