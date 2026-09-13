@@ -1,0 +1,189 @@
+ .top {
+     position: sticky;
+     top: 0;
+     z-index: 4;
+     background: #0f172af0;
+     backdrop-filter: blur(18px);
+     border-bottom: 1px solid var(--line)
+ }
+
+ .top .container {
+     height: 70px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center
+ }
+
+ .top a {
+     color: var(--muted);
+     font-size: .85rem
+ }
+
+ .casehero {
+     padding: 95px 0;
+     background: radial-gradient(circle at 80% 30%, #9aaeff20, transparent 30%)
+ }
+
+ .casehero h1 {
+     font: 700 clamp(3rem, 6vw, 5.5rem)/.95 "Space Grotesk";
+     letter-spacing: -.06em
+ }
+
+ .casehero em {
+     font-style: normal;
+     color: var(--accent2)
+ }
+
+ .casehero p,
+ .copy {
+     max-width: 800px;
+     color: var(--muted);
+     line-height: 1.8
+ }
+
+ .tags {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+     margin-top: 25px
+ }
+
+ .tags span {
+     padding: 8px 12px;
+     border: 1px solid var(--line);
+     border-radius: 999px;
+     color: #cbd5e6;
+     font-size: .76rem
+ }
+
+ .split {
+     display: grid;
+     grid-template-columns: .85fr 1.15fr;
+     gap: 90px
+ }
+
+ .dark {
+     background: var(--surface);
+     border-top: 1px solid var(--line);
+     border-bottom: 1px solid var(--line)
+ }
+
+ .arch,
+ .features {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1px;
+     background: var(--line);
+     margin-top: 35px
+ }
+
+ .arch>div,
+ .features article {
+     padding: 25px;
+     background: var(--surface)
+ }
+
+ .arch b,
+ .features b {
+     color: var(--accent);
+     font-size: .7rem
+ }
+
+ .arch strong {
+     display: block;
+     margin: 14px 0 8px;
+     font: 600 1.05rem "Space Grotesk"
+ }
+
+ .arch p,
+ .features p {
+     color: var(--muted);
+     line-height: 1.65;
+     font-size: .84rem
+ }
+
+ .features {
+     grid-template-columns: repeat(3, 1fr)
+ }
+
+ .features article {
+     min-height: 180px
+ }
+
+ .features h3 {
+     font: 600 1rem "Space Grotesk"
+ }
+
+ .screenshots {
+     background: #17243a55;
+     border-top: 1px solid var(--line);
+     border-bottom: 1px solid var(--line)
+ }
+
+ .shots {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+     margin-top: 35px
+ }
+
+ .shots figure {
+     margin: 0;
+     border: 1px solid var(--line);
+     border-radius: 14px;
+     overflow: hidden;
+     background: var(--surface)
+ }
+
+ .shots img {
+     display: block;
+     width: 100%;
+     aspect-ratio: 16/9;
+     object-fit: cover
+ }
+
+ .shots figcaption {
+     padding: 15px;
+     font: 600 .9rem "Space Grotesk"
+ }
+
+ .next {
+     padding: 90px 0 110px;
+     background: var(--surface)
+ }
+
+ .next h2 {
+     font: 700 clamp(2.5rem, 5vw, 4.5rem)/1 "Space Grotesk";
+     max-width: 800px
+ }
+
+ @media(max-width:900px) {
+     .split {
+         grid-template-columns: 1fr
+     }
+
+     .arch {
+         grid-template-columns: 1fr 1fr
+     }
+
+     .features {
+         grid-template-columns: 1fr 1fr
+     }
+ }
+
+ @media(max-width:600px) {
+
+     .arch,
+     .features,
+     .shots {
+         grid-template-columns: 1fr
+     }
+
+     .casehero {
+         padding: 65px 0
+     }
+
+     .casehero h1 {
+         font-size: 3.1rem
+     }
+ }

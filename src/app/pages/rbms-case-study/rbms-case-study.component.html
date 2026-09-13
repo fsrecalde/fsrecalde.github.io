@@ -1,0 +1,100 @@
+<header class="top">
+    <div class="container"><a routerLink="/">← Back to portfolio</a><a href="/assets/files/fsrecalde_resume.pdf"
+            target="_blank">Resume ↗</a></div>
+</header>
+<section class="casehero">
+    <div class="container">
+        <div class="section-label">Featured project / Case study</div>
+        <h1>Resident Benefits<br><em>Management System</em></h1>
+        <p>A full-stack platform I built from the ground up to support resident management, benefits tracking,
+            reporting, user access, auditability and QR workflows.</p>
+        <div class="tags">
+            <span>Angular</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>GCP</span>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container split">
+        <div>
+            <div class="section-label">01 / Overview</div>
+            <h2 class="section-title">From requirements<br>to deployed product.</h2>
+        </div>
+        <div>
+            <p class="copy">I owned the solution end-to-end: requirements, architecture, frontend, backend APIs,
+                database, authentication, role-based access, testing, troubleshooting and Google Cloud deployment.</p>
+            <p class="copy">The system was designed around a large resident dataset and multiple staff roles, with
+                controlled access to resident information and administrative workflows.</p>
+        </div>
+    </div>
+</section>
+<section class="section dark">
+    <div class="container">
+        <div class="section-label">02 / Architecture</div>
+        <h2 class="section-title">How I structured the system.</h2>
+        <div class="arch">
+            <div><b>Frontend</b><strong>Angular + TypeScript</strong>
+                <p>Reusable components and API-driven workflows</p>
+            </div>
+            <div><b>API layer</b><strong>Node.js + Express</strong>
+                <p>REST endpoints, auth and business logic</p>
+            </div>
+            <div><b>Data</b><strong>MongoDB</strong>
+                <p>Resident, user, role, claims and audit data</p>
+            </div>
+            <div><b>Cloud</b><strong>Google Cloud Platform</strong>
+                <p>Cloud-hosted application deployment</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section-label">03 / Key features</div>
+        <h2 class="section-title">Built around real<br>operational workflows.</h2>
+        <div class="features">
+            <article><b>01</b>
+                <h3>Resident management</h3>
+                <p>Profiles, lists, search, filtering and pagination for a large dataset.</p>
+            </article>
+            <article><b>02</b>
+                <h3>Role-based access</h3>
+                <p>Roles, permissions and barangay-based access controls.</p>
+            </article>
+            <article><b>03</b>
+                <h3>Benefits & claims</h3>
+                <p>Structured workflows for resident assistance information.</p>
+            </article>
+            <article><b>04</b>
+                <h3>Audit trail</h3>
+                <p>Activity tracking for accountability and visibility.</p>
+            </article>
+            <article><b>05</b>
+                <h3>QR workflows</h3>
+                <p>QR-based resident lookup through the Scan Portal.</p>
+            </article>
+            <article><b>06</b>
+                <h3>Reporting</h3>
+                <p>Operational reporting for staff and administrators.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="section screenshots">
+    <div class="container">
+        <div class="section-label">04 / Screenshots</div>
+        <h2 class="section-title">RBMS Sample Shots<br>screens here.</h2>
+        <p class="copy">Some of the real data are blurred for privacy purposes.</p>
+        <div class="shots">
+            <figure *ngFor="let s of shots"><img [src]="s[0]" [alt]="s[1]">
+                <figcaption>{{s[1]}}</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+<section class="next">
+    <div class="container">
+        <div class="section-label">Interested in the work?</div>
+        <h2>Let's talk about what I can build next.</h2><a class="primary" href="mailto:fleurinerecalde@gmail.com">Email
+            me ↗</a>
+    </div>
+</section>
